@@ -1,4 +1,4 @@
-Happy-Sad-Angry Model
+## Happy-Sad-Angry Model
 
 This model is used to predict people's emotions based on their face. It is trained on an imagenet Resnet-18 model using transfer learning. A.I models that can recognize emotions can be used in a variety of fields, like healthcare, marketing, customer service, and car safety. 
 
