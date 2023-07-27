@@ -5,8 +5,8 @@ This model is used to predict people's emotions based on their face. It is train
 ## The Algorithm
 The algorithim is used by recording a video on a Logitech webcam - supported by Jetson nano. It uses a 2GB Jetson Nano, and so it uses it a preflashed SD card flashed from the NVIDIA webpage. It uses a facenet to find a persons face in the image, then it crops the image to just hold the face. It then sends the face to the transfer learning model. The transfer model then predicts your emotion. It will try to guess your emotion to the best of its abilities. Then it will print out the emotion is it is confident. It is up to the user to interepret the information.
 Note: I ran this model on a realivly low epoch with information that was askew. The pretrained model is quite inacurrate.
-## Running this project
 
+## Running this project
 1. Connect to your Jetson Nano via VSCODE. 
 2. Connect your Webcam (preferably logitech)
 3. Ensure that you have the proper things installed. The Renet18.onnx and all others like that - the ones that say resnet18.onnx and your happy-sad-angry.py. Also, esure that you have the labels.txt file.
