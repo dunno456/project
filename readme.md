@@ -9,8 +9,8 @@ Note: I ran this model on a realivly low epoch with information that was askew. 
 
 1. Connect to your Jetson Nano via VSCODE. 
 2. Connect your Webcam (preferably logitech)
-3. Ensure that you have the proper things installed. The Renet18.onnx and all others like that - the ones that say resnet18.onnx and the final_project2.py. Also, esure that you have the labels.txt file.
-4. Since using the preflashed SD card, there sould be a docker container. This is accesable by implementing this code. !!!!!Change directories into jetson-inference/build/aarch64/bin. - use this code if your in the home.$ cd jetson-inference/build/aarch64/bin!!!!!
+3. Ensure that you have the proper things installed. The Renet18.onnx and all others like that - the ones that say resnet18.onnx and your happy-sad-angry.py. Also, esure that you have the labels.txt file.
+4. Since using the preflashed SD card, there sould be a docker container. This is accesable by implementing this code. !!!!!Change directories into jetson-inference/build/aarch64/bin. - use this code if your in the home.$ cd jetson-inference/build/aarch64/bin!!!!! <-- I don't get this
 5. Then run this code -$ ./docker/run.sh --volume /home/(username)/final-projects:/final-projects        - the code moves the final-projects folder into the docker container so that the line from PIL import Image runs without an error.
 6a. The run the following code - $ python3 final_project2.py --network=facenet (webcam name here)
 6b. You should see a video popup of your face. Note how it is not a smooth stream of images. It should be a headshot of you and your face, and there should be some black space.
